@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <title>platzi-travel</title>
+
+    <style>
+        .imagen{
+            background-image: url(./img/iceland.jpg);
+            height: 500px;
+            width: 500px;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+    <body class="font-Montserrat dark:bg-gray900">
+        <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed lg:z-10 dark:bg-gray800">
+            <div class="h-auto w-auto ">
+                <p class="text-xl text-primary font-black dark:text-white" dark:text-white>Platzi Travel</p>
+            </div>
+            <div class="flex space-x-8">
+                <a class="font-bold textmd text-primary dark:text-white" href="#home">Inicio</a>
+                <a class="font-bold textmd text-primary dark:text-white" href="#recomendados">Recomendados</a>
+                <a class="font-bold textmd text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+                <a class="font-bold textmd text-primary dark:text-white" href="#faqs">FAQs</a>
+                <a class="font-bold textmd text-primary dark:text-white" href="#sobre_nosotros">Sobre Nosotros</a>
+            </div>
+            <div class="flex space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="fill-current text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+                <button id="toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path class="dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>     
+            </div>
+        </nav>
+       
+        <section class="w-full h-auto ">
+            <div class="w-full h-3/4" id="home">
+                <div class="w-full h-2/5 flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start">
+                    <input type="search" class="outline-none p-3 rounded-full shadow.sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                        <p class="text-4xl ml-16 font-bold">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold ml-8 p-4 bg-white transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100 ">
+                        Explorar
+                    </button>
+                </div>
+
+                <div class="w-full h-full lg:h-screen lg:bg-sanFranciscoDesktop bg-cover bg-no-repeat lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="San Francisco City">
+                </div>
+
+            </div><!-- .home -->
+
+            <div class="w-full h-auto" id="recomendados ">
+                <p class="text-3xl forn-semibold text-primary pl-6 pt-6">Recomendados</p>
+                <div class="w-auto h-72  items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                    <div class="Card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-cover"
+                        style="background-image: url('./img/norway.jpg');"></div>
+                        <!-- <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/norway.jpg" alt=""> -->
+                        <div class="w-full h-2/5 rounded-b-lg bg-secondary dark:bg-gray700 text-white px-4 py-2">
+                            <p class="text-bold text-xl">Norway</p>
+                            <p class="text-base">Beautiful landscapes</p>
+                        </div>
+                    </div><!-- .norway -->
+
+                    <div class="Card">  
+                        <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/new_york.jpg" alt="">
+                        <div class="w-full h-2/5 rounded-b-lg bg-white dark:bg-gray800 text-tertiary dark:text-white px-4 py-2">
+                            <p class="text-bold text-xl">New york</p>
+                            <p class="text-base">Beautiful landscapes</p>
+                        </div>
+                    </div><!-- .New_York -->
+
+                    <div class="Card">
+                        <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/yosemite.jpg" alt="">
+                        <div class="w-full h-2/5 rounded-b-lg bg-secondary dark:bg-gray700 text-white px-4 py-2">
+                            <p class="text-bold text-xl">Yosemite</p>
+                            <p class="text-base">A break from the world</p>
+                        </div>
+                    </div><!-- .nyosemire -->
+
+                    <div class="Card">
+                        <img class="w-full h-3/5 rouded-t-xl object-cover" src="./img/seattle.jpg" alt="seattle">
+                        <div class="w-full h-2/5 rounded-b-lg bg-white dark:bg-gray800 text-tertiary dark:text-white px-4 py-2">
+                            <p class="text-bold text-xl">Seattle</p>
+                            <p>Big City</p>
+                        </div><!-- seattle -->
+                    </div>
+                    
+                    <div class="Card">
+                        <img class="w-full h-3/5 rouded-t-xl object-cover" src="./img/switzerland.jpg" alt="seattle">
+                        <div class="w-full h-2/5 rounded-b-lg bg-secondary dark:bg-gray700 text-white px-4 py-2">
+                            <p class="text-bold text-xl">switzerland</p>
+                            <p>una ciudad algo bien</p>
+                        </div><!-- swtzerland -->
+                    </div>
+
+                    <div class="Card">
+                        <img class="w-full h-3/5 rouded-t-xl object-cover" src="./img/europe.jpg" alt="seattle">
+                        <div class="w-full h-2/5 rounded-b-lg bg-white dark:bg-gray800 text-tertiary dark:text-white px-4 py-2">
+                            <p class="text-bold text-xl">Europe</p>
+                            <p>ciudad donde a todos nos gustaria vivir</p>
+                        </div><!-- swtzerland -->
+
+                </div>
+            </div><!-- .Recomendados -->
+
+            <div class="px-6 h-full w-full lg:px-6" id="rentas_destacadas">
+                <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas destacadas</p>
+                <div class="w-full flex flex-col items-center">
+
+                    <div class="w-full h-96 bg-cover bg-no-repeat rounded-lg bg-center mb-8 lg:bg-center"
+                        style="background-image: url('./img/chicago.jpg');">
+                        <p class="Cardtitle lg:text-black">Chicago</p>
+                        <p class="pl-8 text-base mr-24 lg:text-lg">2 abitaciones, baño y cosina</p>  
+                    </div>
+                    <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
+                        <div class="w-full h-96 bg-cover bg-no-repeat rounded-xl mb-8 bg-center  lg:h-auto"
+                                style="background-image: url('./img/miami.jpg');">
+                            <p class="Cardtitle text-primary">Miami</p>
+                            <p class="pl-8 text-base text-white mr-24 lg:text-lg">2 abitaciones, baño y cosina</p>
+                        </div>   
+
+                        <div class="w-full h-full">
+                            <div class="w-full h-96 bg-cover bg-no-repeat rounded-xl mb-8 bg-center"
+                            style="background-image: url('./img/LA.jpg');">
+                                <p class="Cardtitle text-primary">Los Angeles California</p>
+                                <p class="pl-8 text-base text-white mr-24 lg:text-lg">2 abitaciones, baño y cosina</p>    
+                            </div>
+        
+                            <div class="w-full h-96 bg-cover bg-no-repeat rounded-xl mb-8 bg-center"
+                                style="background-image: url('./img/switzerland.jpg');">
+                                <p class="Cardtitle text-primary">switzerland</p>
+                                <p class="pl-8 text-base text-white mr-24 lg:text-lg">2 abitaciones, baño y cosina</p>    
+                            </div>
+                        </div>        
+                    </div>
+                    
+                </div><!--cartas -->
+
+                <div class="w-full h-auto" id="faqs">
+                    <div class="w-full h-auto flex flex-col">
+                        <p class="text-3xl text-primary dark:text-white mt-6 pb-4">FAQs</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-primary dark:text-white">Metodos de Pago</p>
+                        <p class="text-base pt-3 pb-4 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    </div>
+
+                    <div>
+                        <p class="text-xl font-medium text-primary dark:text-white">Politicas de Cancelación</p>
+                        <p class="text-base pt-3 pb-4 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    </div>
+
+                    <div>
+                        <p class="text-xl font-medium text-primary dark:text-white">Long Stays</p>
+                        <p class="text-base pt-3 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                        <p class="text-base pb-4 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    </div>
+
+               </div>
+
+
+            </div><!-- rentas_destacadas -->
+            
+           
+            <footer class="w-full h-auto bg-gray p-6 space-y-4 mt-4 mb-6" id="sobre_nosotros">
+                <p class="text-lg text-gray700">Acerca de</p>
+                <p class="text-sm text-gray700">Acerca De</p>
+                <p class="text-sm text-gray700">Inversionistas</p>
+                <p class="text-sm text-gray700">Empleos</p>
+                <p class="text-sm text-gray700">Términos y Condiciones</p>
+            </footer>
+        </section>
+        
+
+        <div class="w-full h-8 fixed left-0 bottom-0 shadow-md flex space-x-8 item-center justify-around bg-gray lg:hidden dark:bg-gray700" id="tab_bar">
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="fill-current text-otro" stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>                  
+            </a>
+            <a href="#recomendados">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="fill-current text-otro" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>                  
+            </a>
+            <a href="#rentas_destacadas">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="fill-current text-otro" stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                  </svg>                  
+            </a>
+            <button id="toggle-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                  </svg>  
+            </button>
+            <a href="#">    
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="fill-current text-otro" stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                  </svg>                  
+            </a>
+        </div>
+        <script>
+            const htmlElement = document.querySelector("html");
+            const toggleButton = document.querySelector("#toggle");
+            const toggleButtonSm = document.querySelector("#toggle-sm");
+
+            toggleButton.addEventListener("click", ()=>toggleDarkMode())
+            toggleButtonSm.addEventListener("click", ()=>toggleDarkMode())
+
+            const toggleDarkMode = () =>{
+                htmlElement.classList.contains("dark") ?
+                htmlElement.classList.remove("dark") :
+                htmlElement.classList.add("dark")
+            }
+        </script>
+    </body>
+</html>
